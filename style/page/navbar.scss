@@ -1,0 +1,17 @@
+.nav{
+    margin-top: 2rem;
+    & .nav-list{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-size: $fs3;
+
+
+        & .nav-item{
+            
+            & .nav-link{
+                text-decoration: none;
+            }
+        }
+    }
+}
