@@ -324,8 +324,12 @@ footer .footer-img img {
 }
 
 .package {
-  margin: 2rem 15rem;
+  margin: 3rem 15rem;
   max-width: 77rem;
+}
+
+.package .package-info {
+  margin-bottom: 6rem;
 }
 
 .package .package-info h1 {
