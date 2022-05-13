@@ -1,0 +1,103 @@
+.btn{
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px,rgba(0, 0, 0, .14) 0 4px 7px 0,rgba(0, 0, 0, .12) 0 1px 14px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    // transition: box-shadow 180ms cubic-bezier(.2, 0, .1, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    // transition: background-color 1.6s ease;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #ee79f793;
+        box-shadow: rgba(0, 0, 0, .2) 0 4px 8px -1px,rgba(0, 0, 0, .14) 0 8px 16px 0,rgba(0, 0, 0, .12) 0 1px 28px 0;
+
+        color: $color-white;
+        transform: translateY(-3px);
+        // transition: box-shadow 180ms cubic-bezier(.6, 0, .4, 1),opacity 15ms linear 30ms,transform 70ms cubic-bezier(0, 0, 0, 0) 0ms;
+      }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    }
+}
+
+
+
+//
+
+// <!-- HTML !-->
+// <button class="button-6" role="button">Button 6</button>
+
+// /* CSS */
+// .button-6 {
+//   align-items: center;
+//   background-color: #FFFFFF;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: .25rem;
+//   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+//   box-sizing: border-box;
+//   color: rgba(0, 0, 0, 0.85);
+//   cursor: pointer;
+//   display: inline-flex;
+//   font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//   font-size: 16px;
+//   font-weight: 600;
+//   justify-content: center;
+//   line-height: 1.25;
+//   margin: 0;
+//   min-height: 3rem;
+//   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+//   position: relative;
+//   text-decoration: none;
+//   transition: all 250ms;
+//   user-select: none;
+//   -webkit-user-select: none;
+//   touch-action: manipulation;
+//   vertical-align: baseline;
+//   width: auto;
+// }
+
+// .button-6:hover,
+// .button-6:focus {
+//   border-color: rgba(0, 0, 0, 0.15);
+//   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+//   color: rgba(0, 0, 0, 0.65);
+// }
+
+// .button-6:hover {
+//   transform: translateY(-1px);
+// }
+
+// .button-6:active {
+//   background-color: #F0F0F1;
+//   border-color: rgba(0, 0, 0, 0.15);
+//   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+//   color: rgba(0, 0, 0, 0.65);
+//   transform: translateY(0);
+// }

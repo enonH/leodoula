@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-vertical{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text-center{
+    text-align: center;
+}

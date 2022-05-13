@@ -1,0 +1,49 @@
+
+.doula-about{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 6rem 0;
+    text-align: right;
+    & .doula-about-container{
+
+        & h1{
+            padding: 2rem 0;
+            color: $color-secondary-dark;
+            
+        }
+    }
+    & .doula-about-img{
+        padding-top: 2rem;
+        width: 30%;
+        height: 30%;
+        margin-left: 2rem;
+    }
+}
+
+.included{
+    text-align: center;
+    padding: 8rem 0;
+    background-color: white;
+
+    & h1{
+        margin-bottom: 3rem;
+        color: $color-secondary-dark;
+    }
+    & .included-container{
+      flex-wrap: wrap;
+      align-self: center;
+        gap: 2rem;
+        & .included-item{
+            & img{
+                width: 10rem;
+            }
+
+            & h3{
+                width: 17rem;
+                height: 8rem;
+                padding-top: 2rem;
+                font-weight: 400;
+            }
+        }
+    }
+}

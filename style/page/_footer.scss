@@ -1,0 +1,18 @@
+
+footer{
+    background-color: $color-secondary-dark;
+    color: $color-white;
+    padding: 3rem 0 1rem 0;
+    
+    & .footer-info{
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    & .footer-img{
+        width: 13rem;
+        & img{
+            width: 100%;
+        }
+    }
+}

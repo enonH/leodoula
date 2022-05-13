@@ -1,0 +1,14 @@
+
+.package{
+    margin: 2rem 15rem;
+    max-width: 77rem;
+    & .package-info{
+
+        & h1{
+            margin: 2rem 0;
+        }
+        & h4{
+            margin: 2rem 0 1rem 0;
+        }
+    }
+}

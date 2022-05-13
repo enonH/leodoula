@@ -1,11 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  font-size: 82.5%;
+  font-size: 100%;
 }
 
 body {
-  color: #181616;
+  color: #242423;
   background-color: #eee7dd;
-  margin: 0 2rem;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.services {
+  background-color: #ffff;
+}
+
+.services h1 {
+  margin-left: 15rem;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 82.5%;
+  }
+}
+
+.nav {
+  padding-top: 2rem;
 }
 
 .nav .nav-list {
@@ -16,11 +55,284 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2rem;
-  margin: 1rem;
+  font-size: 1.4rem;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav-list .nav-item-logo {
+  margin-right: 25%;
+  width: 9rem;
+}
+
+.nav .nav-list .nav-item-logo img {
+  width: 100%;
 }
 
 .nav .nav-list .nav-item .nav-link {
+  color: #242423;
   text-decoration: none;
+  color: white;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-perspective: 3px;
+          perspective: 3px;
+}
+
+.parallax .header {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 56, 63, 0.6)), to(rgba(87, 22, 69, 0.6))), url("../../images/pregWoman.jpg");
+  background-image: linear-gradient(0deg, rgba(68, 56, 63, 0.6), rgba(87, 22, 69, 0.6)), url("../../images/pregWoman.jpg");
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  z-index: -1;
+  -webkit-transform: translateZ(-3px) scale(2.01);
+          transform: translateZ(-3px) scale(2.01);
+}
+
+.parallax .header .header-name {
+  position: absolute;
+  color: white;
+  top: 22rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Sacramento', cursive;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.parallax .welcome {
+  background-color: #ffff;
+  padding: 6rem 0;
+  gap: 4rem;
+}
+
+.parallax .welcome .welcome-img {
+  width: 16%;
+}
+
+.parallax .welcome .welcome-img img {
+  width: 100%;
+}
+
+.parallax .welcome .welcome-info {
+  max-width: 30rem;
+}
+
+.parallax .welcome .welcome-info h1 {
+  padding-bottom: 2.5rem;
+  color: #c4ae8f;
+}
+
+.header-alt {
+  position: relative;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 56, 63, 0.6)), to(rgba(87, 22, 69, 0.6))), url("../../images/pregWoman.jpg");
+  background-image: linear-gradient(0deg, rgba(68, 56, 63, 0.6), rgba(87, 22, 69, 0.6)), url("../../images/pregWoman.jpg");
+  height: 55vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.header-alt .header-name {
+  position: absolute;
+  color: white;
+  top: 18rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Sacramento', cursive;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.doula-about {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 6rem 0;
+  text-align: right;
+}
+
+.doula-about .doula-about-container h1 {
+  padding: 2rem 0;
+  color: #c4ae8f;
+}
+
+.doula-about .doula-about-img {
+  padding-top: 2rem;
+  width: 30%;
+  height: 30%;
+  margin-left: 2rem;
+}
+
+.included {
+  text-align: center;
+  padding: 8rem 0;
+  background-color: white;
+}
+
+.included h1 {
+  margin-bottom: 3rem;
+  color: #c4ae8f;
+}
+
+.included .included-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  gap: 2rem;
+}
+
+.included .included-container .included-item img {
+  width: 10rem;
+}
+
+.included .included-container .included-item h3 {
+  width: 17rem;
+  height: 8rem;
+  padding-top: 2rem;
+  font-weight: 400;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  background-color: #c4ae8f;
+  color: #ffff;
+  padding: 3rem 0 1rem 0;
+}
+
+footer .footer-info {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+footer .footer-img {
+  width: 13rem;
+}
+
+footer .footer-img img {
+  width: 100%;
+}
+
+.btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 7px 0, rgba(0, 0, 0, 0.12) 0 1px 14px 0;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 7px 0, rgba(0, 0, 0, 0.12) 0 1px 14px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #ee79f793;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px -1px, rgba(0, 0, 0, 0.14) 0 8px 16px 0, rgba(0, 0, 0, 0.12) 0 1px 28px 0;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px -1px, rgba(0, 0, 0, 0.14) 0 8px 16px 0, rgba(0, 0, 0, 0.12) 0 1px 28px 0;
+  color: #ffff;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+}
+
+.package {
+  margin: 2rem 15rem;
+  max-width: 77rem;
+}
+
+.package .package-info h1 {
+  margin: 2rem 0;
+}
+
+.package .package-info h4 {
+  margin: 2rem 0 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

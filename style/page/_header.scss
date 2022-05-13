@@ -1,0 +1,77 @@
+// Parallax is the container witch in you can scroll.
+.parallax{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 3px;
+ 
+
+    & .header{
+        position: relative;
+        transform-style: preserve-3d;
+        height: 100%;
+        background-image: linear-gradient(0deg, rgba(68, 56, 63, 0.6), rgba(87, 22, 69, 0.6)), url("../../images/pregWoman.jpg");
+        background-repeat: no-repeat;
+        // background-size: 100% auto;
+        object-fit: cover;
+        background-size: cover;
+        z-index: -1;
+        // background-position: center center;
+        // vertical-align: top;
+        // transform-origin: center top;
+        transform: translateZ(-3px) scale(2.01);
+
+        & .header-name{
+            position: absolute;
+            color: white;
+            top: 22rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Sacramento', cursive;
+            font-weight: 300;
+            font-size: 4rem;
+        }
+    }
+
+    & .welcome{
+        background-color: $color-white;
+        padding: 6rem 0;
+        gap: 4rem;
+        & .welcome-img{
+            width: 16%;
+            & img{
+                width: 100%;
+            }
+        }
+        & .welcome-info{
+            max-width: 30rem;
+            & h1{
+                padding-bottom: 2.5rem;
+                color: $color-secondary-dark;
+                // letter-spacing: 0.15rem;
+            }
+        }
+    }
+}
+
+.header-alt{
+    position: relative;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(68, 56, 63, 0.6), rgba(87, 22, 69, 0.6)), url("../../images/pregWoman.jpg");
+    height: 55vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+    & .header-name{
+        position: absolute;
+        color: white;
+        top: 18rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Sacramento', cursive;
+        font-weight: 300;
+        font-size: 4rem;
+    }
+}
+

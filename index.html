@@ -4,28 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sacramento&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Leontine Doula</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script type="module" src="./main.js"></script>
   </head>
+
   <body>
-      <header>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Hem</a>
-            </li>
-            <li class="nav-item">
-              <a href="#doula" class="nav-link">Doulapaketet</a>
-            </li>
-            <li class="nav-item">
-              <a href="#education" class="nav-link">Mina utbildningar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">Om</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <div class="parallax">
+      <header class="header">
+        <my-navbar></my-navbar>
+        <h1 class="header-name">Doula By Leontine</h1>
+      </header> 
+    <section class="welcome">
+      <div class="welcome flex">
+        <div class="welcome-img">
+          <img src="./images//woman.png" alt="">
+        </div>
+        <div class="welcome-info">
+          <h1>Varmt Välkommen!</h1>
+          <p>Jag heter Leontine och är verksam i Stockholm.</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, 
+            omnis labore iusto eum consequuntur animi nemo a est obcaecati 
+            architecto nobis non numquam porro voluptatibus eius voluptas 
+            possimus sequi quibusdam?
+          </p>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, 
+            omnis labore iusto eum consequuntur animi nemo a est obcaecati 
+            architecto nobis non numquam porro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="doula-about flex">
+      <div class="doula-about-container">
+        <h1>Vad gör en Doula?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod, 
+          voluptates debitis ut adipisci libero atque voluptatibus veniam vero sed, 
+          eveniet tenetur voluptatum itaque alias officiis voluptas? Deserunt, eaque. 
+          Maiores accusamus quasi perferendis laudantium aliquid fugit iste doloribus 
+          totam saepe, porro repellendus impedit cupiditate quos voluptatibus 
+          architecto quis ea nostrum!
+        </p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, ea.</p>
+      </div>
+      <img class="doula-about-img" src="./images/helpinghands.png" alt="">
+    </section>
+  <section class="included">
+    <h1>Doula paketet</h1>
+    <div class="flex included-container">
+      <div class="flex-vertical included-container">
+        <div class="included-item">
+          <img src="./images/hands.png" alt="">
+          <h3>Samtal och förberedelser inför förlossning</h3>
+        </div>
+        <div class="included-item">
+          <img src="./images/jour.png" alt="">
+          <h3>Jour 1vecka innan och 2veckor efter beräknad födsel</h3>
+        </div>
+        <div class="included-item">
+          <img src="./images/samtal.png" alt="">
+          <h3>Postpartum samtal och stöd</h3>
+        </div>
+      </div>
+    </div>
+    <button class="btn" onclick="location.href='./doulapaket.html'">Läs mer</button>
+  </section>
+  <my-footer></my-footer>
 	<script src="index.js"></script>
+  </div>  
   </body>
 </html>
