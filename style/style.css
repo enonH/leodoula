@@ -11,7 +11,7 @@ html {
 
 body {
   color: #242423;
-  background-color: #eee7dd;
+  background-color: #ffff;
   line-height: 1.4;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -44,7 +44,7 @@ p {
 }
 
 .nav {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .nav .nav-list {
@@ -55,7 +55,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -63,8 +63,8 @@ p {
 }
 
 .nav .nav-list .nav-item-logo {
-  margin-right: 25%;
-  width: 9rem;
+  margin-right: 45%;
+  width: 8rem;
 }
 
 .nav .nav-list .nav-item-logo img {
@@ -81,15 +81,16 @@ p {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  -webkit-perspective: 3px;
-          perspective: 3px;
+  -webkit-perspective: 1px;
+          perspective: 1px;
 }
 
 .parallax .header {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  height: 100%;
+  height: 90%;
+  top: -5%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 56, 63, 0.6)), to(rgba(87, 22, 69, 0.6))), url("../../images/pregWoman.jpg");
   background-image: linear-gradient(0deg, rgba(68, 56, 63, 0.6), rgba(87, 22, 69, 0.6)), url("../../images/pregWoman.jpg");
   background-repeat: no-repeat;
@@ -97,14 +98,14 @@ p {
      object-fit: cover;
   background-size: cover;
   z-index: -1;
-  -webkit-transform: translateZ(-3px) scale(2.01);
-          transform: translateZ(-3px) scale(2.01);
+  -webkit-transform: translateZ(-1px) scale(2.01);
+          transform: translateZ(-1px) scale(2.01);
 }
 
 .parallax .header .header-name {
   position: absolute;
   color: white;
-  top: 22rem;
+  top: 25rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -146,6 +147,8 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
+  -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+          clip-path: ellipse(120% 100% at 50% 0%);
 }
 
 .header-alt .header-name {
@@ -161,10 +164,14 @@ p {
 }
 
 .doula-about {
-  max-width: 70rem;
-  margin: 0 auto;
   padding: 6rem 0;
   text-align: right;
+  background-color: #eee7dd;
+}
+
+.doula-about .doula-about-container {
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .doula-about .doula-about-container h1 {
@@ -324,11 +331,12 @@ footer .footer-img img {
 }
 
 .package {
-  margin: 3rem 15rem;
-  max-width: 77rem;
+  background-color: #eee7dd;
 }
 
 .package .package-info {
+  margin: 3rem 15rem;
+  max-width: 77rem;
   margin-bottom: 6rem;
 }
 

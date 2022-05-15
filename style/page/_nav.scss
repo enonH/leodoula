@@ -1,17 +1,17 @@
 .nav{
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     ;
     & .nav-list{
         display: flex;
         list-style: none;
         justify-content: center;
-        font-size: $fs4;
+        font-size: $fs5;
         gap: 2rem;
         align-items: center;
 
         & .nav-item-logo{
-            margin-right: 25%;
-            width: 9rem;
+            margin-right: 45%;
+            width: 8rem;
             & img{
                 width: 100%;
             }

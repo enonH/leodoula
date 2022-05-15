@@ -1,11 +1,12 @@
 
 .doula-about{
-    max-width: 70rem;
-    margin: 0 auto;
     padding: 6rem 0;
     text-align: right;
+    background-color: $color-primary;
+    
     & .doula-about-container{
-
+        max-width: 70rem;
+        margin: 0 auto;
         & h1{
             padding: 2rem 0;
             color: $color-secondary-dark;

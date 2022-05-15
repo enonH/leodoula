@@ -1,8 +1,10 @@
 
 .package{
-    margin: 3rem 15rem;
-    max-width: 77rem;
+    background-color: $color-primary;
+
     & .package-info{
+        margin: 3rem 15rem;
+        max-width: 77rem;
         margin-bottom: 6rem;
         & h1{
             margin: 2rem 0;
